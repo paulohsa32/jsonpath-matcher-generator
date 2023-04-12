@@ -4,6 +4,9 @@ dependencies:
   citty:
     specifier: ^0.1.1
     version: 0.1.1
+  copy-text-to-clipboard:
+    specifier: ^3.0.1
+    version: 3.0.1
   destr:
     specifier: ^1.2.2
     version: 1.2.2
@@ -25,9 +28,6 @@ devDependencies:
     specifier: ^0.5.2
     version: 0.5.2
   consola:
-    specifier: ^3.0.1
-    version: 3.0.1
-  copy-text-to-clipboard:
     specifier: ^3.0.1
     version: 3.0.1
   eslint:
@@ -2503,7 +2503,7 @@ packages:
   /copy-text-to-clipboard@3.0.1:
     resolution: {integrity: sha512-rvVsHrpFcL4F2P8ihsoLdFHmd404+CMg71S756oRSeQgqk51U3kicGdnvfkrxva0xXH92SjGS62B0XIJsbh+9Q==}
     engines: {node: '>=12'}
-    dev: true
+    dev: false
 
   /core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}

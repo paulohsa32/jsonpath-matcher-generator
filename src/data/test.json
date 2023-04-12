@@ -1,0 +1,18 @@
+{
+  "recipient": {
+    "address": {
+      "city": "Greater Manchester",
+      "postalCode": "M13EZ",
+      "countryCode": "GB"
+    }
+  },
+  "sender": {
+    "address": {
+      "city": "Greater London",
+      "postalCode": "SW1A0AA",
+      "countryCode": "GB"
+    }
+  },
+  "systemOfMeasureType": "IMPERIAL",
+  "accountNumber": { "key": "4c86365b9b194dfeac51a0cec6239d8f" }
+}

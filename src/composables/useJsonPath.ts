@@ -1,4 +1,4 @@
-import uuidv1 from "uuid/v1";
+import { v4 as uuid } from "uuid";
 import { isArray, isObject, isPrimitive } from "../helpers";
 import type { PathRef } from "../model";
 
@@ -11,7 +11,7 @@ export function useJsonPath(sample: { [key: string]: any } | any[]): string {
     refId?: string,
     parentId?: string
   ): void {
-    const id = refId || uuidv1();
+    const id = refId || uuid();
     const parentRef = parentId ? getPathRef(parentId) : null;
     const layer = parentId ? (parentRef?.layer || 0) + 1 : 0;
     const type = isArray(value) ? "array" : typeof value;
@@ -68,7 +68,7 @@ export function useJsonPath(sample: { [key: string]: any } | any[]): string {
 
   function populatePathRefs(object: { [key: string]: any }, parentId?: string) {
     Object.keys(object).forEach((key) => {
-      const id = uuidv1();
+      const id = uuid();
 
       if (isObject(object[key])) {
         addPathRef(key, object[key], id, parentId);

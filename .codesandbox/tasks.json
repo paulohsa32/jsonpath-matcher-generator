@@ -1,0 +1,69 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "pathfinder": {
+      "name": "pathfinder",
+      "command": "pnpm pathfinder"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build"
+    },
+    "build:nuxt": {
+      "name": "build:nuxt",
+      "command": "pnpm build:nuxt"
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint"
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "pnpm lint:fix"
+    },
+    "prepack": {
+      "name": "prepack",
+      "command": "pnpm prepack"
+    },
+    "prerelease": {
+      "name": "prerelease",
+      "command": "pnpm prerelease"
+    },
+    "release": {
+      "name": "release",
+      "command": "pnpm release"
+    },
+    "generate": {
+      "name": "generate",
+      "command": "pnpm generate"
+    },
+    "preview": {
+      "name": "preview",
+      "command": "pnpm preview"
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "pnpm postinstall"
+    }
+  }
+}

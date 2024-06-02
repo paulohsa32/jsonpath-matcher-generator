@@ -8,6 +8,7 @@
   },
   "scripts": {
     "pathfinder": "jiti ./src/cli.ts",
+    "start": "node web/.output/server/index.mjs",
     "dev": "nuxt dev web",
     "build": "unbuild",
     "build:nuxt": "nuxt build web",
